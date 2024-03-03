@@ -1,16 +1,306 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="rvg.sclmngmtsstm.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #101010;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rvg.sclmngmtsstm.MainController">
+   <children>
+      <VBox layoutY="1.0" prefHeight="600.0" prefWidth="232.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="88.0" prefWidth="215.0">
+               <children>
+                  <ImageView fitHeight="44.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/logo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label ellipsisString="" prefHeight="74.0" prefWidth="97.0" text="SMST" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8333333134651184" green="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color green="0.8591370582580566" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+               </children>
+            </HBox>
+            <Button fx:id="homeBtn" defaultButton="true" ellipsisString="" mnemonicParsing="false" onAction="#onHomeBtnClick" prefHeight="66.0" prefWidth="248.0" stylesheets="@../../CSS/style_new.css" text="Home" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/home-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="navBtn" />
+                  <String fx:value="current_btn" />
+               </styleClass>
+            </Button>
+            <Button fx:id="studentsBtn" ellipsisString="" layoutX="10.0" layoutY="84.0" mnemonicParsing="false" onAction="#onStudentsBtnClick" prefHeight="66.0" prefWidth="247.0" styleClass="navBtn" stylesheets="@../../CSS/style_new.css" text="Students" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/student-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="teachersBtn" ellipsisString="" layoutX="10.0" layoutY="150.0" mnemonicParsing="false" onAction="#onTeachersBtnClick" prefHeight="66.0" prefWidth="246.0" styleClass="navBtn" stylesheets="@../../CSS/style_new.css" text="Teachers" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/teacher-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="coursesBtn" ellipsisString="" layoutX="10.0" layoutY="231.0" mnemonicParsing="false" onAction="#onCoursesBtnClick" prefHeight="66.0" prefWidth="239.0" styleClass="navBtn" stylesheets="@../../CSS/style_new.css" text="Courses" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/course-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="settingsBtn" ellipsisString="" layoutX="10.0" layoutY="231.0" mnemonicParsing="false" onAction="#onSettingsBtnClick" prefHeight="66.0" prefWidth="246.0" styleClass="navBtn" stylesheets="@../../CSS/style_new.css" text="Settings" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/setting-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow offsetX="2.0" />
+         </effect>
+      </VBox>
+      <AnchorPane layoutX="232.0" layoutY="-1.0" prefHeight="88.0" prefWidth="668.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <StackPane layoutX="176.0" layoutY="15.0" prefHeight="46.0" prefWidth="332.0" AnchorPane.bottomAnchor="14.600000000000001" AnchorPane.leftAnchor="176.0" AnchorPane.rightAnchor="176.8" AnchorPane.topAnchor="15.0">
+               <children>
+                  <TextField fx:id="searchField" alignment="CENTER" prefHeight="41.0" prefWidth="316.0" promptText="Search - Student, Teacher or Course" style="-fx-background-radius: 30; -fx-background-color: #101010;">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow offsetX="1.0" offsetY="2.0">
+                           <color>
+                              <Color red="0.062745101749897" green="0.062745101749897" blue="0.062745101749897" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </TextField>
+               </children>
+            </StackPane>
+            <Button fx:id="insertDataBtn" layoutX="574.0" layoutY="19.0" mnemonicParsing="false" onAction="#onInsertDataBtnClick" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="19.0">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/create-icon2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow offsetX="2.0" offsetY="2.0" />
+         </effect>
+      </AnchorPane>
+      <BorderPane fx:id="pageContainer" layoutX="255.2" layoutY="115.2" prefHeight="467.0" prefWidth="626.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="115.0">
+         <center>
+            <AnchorPane prefHeight="486.0" prefWidth="641.0" style="-fx-background-radius: 10;" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane layoutX="53.0" layoutY="58.0" prefHeight="187.0" prefWidth="529.0" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="32.59999999999991" AnchorPane.topAnchor="58.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <VBox alignment="CENTER" style="-fx-background-color: black; -fx-background-radius: 10;">
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/student-icon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Students" textFill="#f0f0f0">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="studentsCounter" ellipsisString="" layoutX="86.0" layoutY="35.0" text="1000000" textFill="#cfcfcf">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Reflection />
+                                 </bumpInput>
+                              </Lighting>
+                           </effect>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="15.0" layoutY="15.0" style="-fx-background-color: black; -fx-background-radius: 10;" GridPane.columnIndex="1">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/teacher-icon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Teachers" textFill="#f0f0f0">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="teachersCounter" ellipsisString="" layoutX="86.0" layoutY="35.0" text="210" textFill="#cfcfcf">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Reflection />
+                                 </bumpInput>
+                              </Lighting>
+                           </effect>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" style="-fx-background-color: black; -fx-background-radius: 10;" GridPane.columnIndex="2">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/course-icon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Cources" textFill="#f0f0f0">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="courcesCounter" ellipsisString="" layoutX="86.0" layoutY="35.0" text="120" textFill="#cfcfcf">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Reflection />
+                                 </bumpInput>
+                              </Lighting>
+                           </effect>
+                        </VBox>
+                     </children>
+                  </GridPane>
+                  <Label layoutX="60.0" layoutY="19.0" prefHeight="38.0" prefWidth="546.0" text="Dashboard" textFill="WHITE" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="19.0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

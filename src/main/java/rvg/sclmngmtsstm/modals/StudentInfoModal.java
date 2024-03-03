@@ -1,4 +1,4 @@
-package modals;
+package rvg.sclmngmtsstm.modals;
 
 public class StudentInfoModal {
     public String name, grade, level, address, contact;

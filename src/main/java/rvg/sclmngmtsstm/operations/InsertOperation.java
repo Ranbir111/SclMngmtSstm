@@ -1,17 +1,16 @@
-package operations;
+package rvg.sclmngmtsstm.operations;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import org.json.simple.*;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import modals.CourseInfoModal;
-import modals.StudentInfoModal;
-import modals.TeacherInfoModal;
+import rvg.sclmngmtsstm.modals.*;
 
 public class InsertOperation {
     // All variable and reference variables are declared here

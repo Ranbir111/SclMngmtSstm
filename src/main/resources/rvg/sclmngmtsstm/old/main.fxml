@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="main_container" stylesheets="@../../../CSS/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rvg.sclmngmtsstm.MainController">
+   <children>
+      <VBox layoutY="102.4" prefHeight="498.0" prefWidth="195.0" styleClass="left_navigation" stylesheets="@../../../CSS/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="102.0">
+         <children>
+            <Button fx:id="student_nav_btn" mnemonicParsing="false" onAction="#onStudentButtonClick" prefHeight="64.0" prefWidth="195.0" stylesheets="@../../../CSS/style.css" text="Students" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="2.5" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="nav_btn" />
+                  <String fx:value="nav_clicked_btn" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="teacher_nav_btn" layoutX="10.0" layoutY="15.0" mnemonicParsing="false" onAction="#onTeacherButtonClick" prefHeight="64.0" prefWidth="195.0" styleClass="nav_btn" stylesheets="@../../../CSS/style.css" text="Teachers" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="2.5" top="2.5" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="course_nav_btn" layoutX="10.0" layoutY="81.0" mnemonicParsing="false" onAction="#onCourseButtonClick" prefHeight="64.0" prefWidth="195.0" styleClass="nav_btn" stylesheets="@../../../CSS/style.css" text="Cources" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="2.5" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="1.0" layoutY="-2.0" prefHeight="64.0" prefWidth="900.0" styleClass="top_bar" stylesheets="@../../../CSS/style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <VBox alignment="CENTER" prefHeight="105.0" prefWidth="195.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LOGO" textAlignment="CENTER" wrappingWidth="190.0">
+               <font>
+                  <Font name="Berlin Sans FB" size="50.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9761421084403992" green="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="1.0" blue="0.9040611386299133" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </VBox>
+         <HBox alignment="CENTER" layoutX="197.0" layoutY="3.0" prefHeight="102.0" prefWidth="704.0" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <TextField fx:id="search_field" alignment="CENTER" prefHeight="42.0" prefWidth="491.0" promptText="Search - Students, Teachers or Cources" styleClass="search_field" stylesheets="@../../../CSS/style.css" />
+            <Button fx:id="search_btn" mnemonicParsing="false" styleClass="search_btn" stylesheets="@../../../CSS/style.css" text="Button">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </HBox>
+      </AnchorPane>
+      <BorderPane fx:id="table_container" layoutX="205.0" layoutY="118.0" prefHeight="471.0" prefWidth="685.0" AnchorPane.bottomAnchor="10.400000000000034" AnchorPane.leftAnchor="204.79999999999995" AnchorPane.rightAnchor="9.399999999999977" AnchorPane.topAnchor="118.0">
+         <center>
+            <AnchorPane fx:id="table_wrapper" prefHeight="474.0" prefWidth="682.0" styleClass="table_container" stylesheets="@../../../CSS/style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="table" layoutX="8.0" layoutY="39.2" prefHeight="424.0" prefWidth="666.0" styleClass="table" stylesheets="@../../../CSS/style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="39.0">
+                     <columns>
+                        <TableColumn fx:id="column1" prefWidth="61.600020587444305" text="ID" />
+                        <TableColumn fx:id="column2" prefWidth="114.40008926391602" text="Name" />
+                        <TableColumn fx:id="column3" prefWidth="74.39996337890625" text="Grade" />
+                        <TableColumn fx:id="column4" prefWidth="136.79991149902344" text="Level" />
+                        <TableColumn fx:id="column5" prefWidth="149.5999755859375" text="Address" />
+                        <TableColumn fx:id="column6" prefWidth="144.800048828125" text="Contact" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Label layoutX="19.0" layoutY="6.0" prefHeight="30.0" prefWidth="657.0" styleClass="table_title" stylesheets="@../../../CSS/style.css" text="Student Data" textAlignment="CENTER" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="6.399999999999977" AnchorPane.topAnchor="6.0">
+                     <font>
+                        <Font name="Segoe Print Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>

@@ -1,4 +1,4 @@
-package modals;
+package rvg.sclmngmtsstm.modals;
 
 public class TeacherInfoModal {
     public String name, subject, contact;

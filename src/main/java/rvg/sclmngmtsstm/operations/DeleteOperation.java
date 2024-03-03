@@ -1,4 +1,4 @@
-package operations;
+package rvg.sclmngmtsstm.operations;
 
 import java.io.File;
 import java.io.FileReader;

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="440.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rvg.sclmngmtsstm.TeacherFormController">
+   <children>
+      <TextField fx:id="teacherNameField" layoutX="125.0" layoutY="40.0" prefHeight="47.0" prefWidth="520.0" style="-fx-background-color: #101010;" AnchorPane.leftAnchor="124.79999999999995" AnchorPane.rightAnchor="45.39999999999998" />
+      <TextField fx:id="teacherSubjectField" layoutX="125.0" layoutY="105.0" prefHeight="47.0" prefWidth="520.0" style="-fx-background-color: #101010;" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="45.60000000000002" />
+      <TextField fx:id="teacherContactField" layoutX="125.0" layoutY="170.0" prefHeight="47.0" prefWidth="520.0" style="-fx-background-color: #101010;" AnchorPane.leftAnchor="124.8" AnchorPane.rightAnchor="45.60000000000002" />
+      <Label layoutX="42.0" layoutY="50.0" text="Name:" textFill="WHITE" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="596.1999999999999">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label ellipsisString="" layoutX="32.0" layoutY="115.0" prefHeight="27.0" prefWidth="75.0" text="Subject:" textFill="WHITE" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="583.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label ellipsisString="" layoutX="32.0" layoutY="180.0" prefHeight="27.0" prefWidth="75.0" text="Contact:" textFill="WHITE" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="583.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveBtn" layoutX="5.0" layoutY="385.0" mnemonicParsing="false" onAction="#onSaveDataBtnClick" prefHeight="63.0" prefWidth="731.0" styleClass="dealogue_saveBtn" stylesheets="@../../CSS/style_new.css" text="Insert Data" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

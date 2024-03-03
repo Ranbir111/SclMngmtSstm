@@ -1,4 +1,4 @@
-package modals;
+package rvg.sclmngmtsstm.modals;
 
 public class CourseInfoModal {
     public String courseName, teacher, schedule;

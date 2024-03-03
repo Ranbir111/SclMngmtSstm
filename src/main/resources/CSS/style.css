@@ -1,43 +1,64 @@
-.top_bar{
-    -fx-background-color: #04B400;
-    -fx-border-radius: 50px;
+.main_container {
+    -fx-background-color: white;
 }
-.left_navigation{
-    -fx-background-color: #5CCD60;
+
+.top_bar {
+    -fx-background-color: rgb(0, 0, 139);
 }
-.search_field{
-    /* -fx-border-radius: 50%; */
+
+.left_navigation {
+    -fx-background-color: rgb(0, 0, 139,0.8);
+}
+
+.search_field {
     -fx-border-width: 0;
-    /* -fx-border-color: white; */
     -fx-font-size: 15px;
     -fx-text-alignment: center;
     -fx-text-fill: white;
     -fx-prompt-text-fill: white;
-    -fx-background-color: #49B447;
+    -fx-background-color: rgb(255, 255, 255,0.2);
     -fx-background-radius: 30px;
 }
-.search_field:focused{
+
+.search_field:focused {
     -fx-border-width: 0;
 }
-.nav_btn{
+
+.search_btn{
+    -fx-font-size: 15px;
+    -fx-start-margin: 5px;
+    -fx-background-radius: 30px;
+    -fx-padding: 10px 15px 10px 15px;
+    -fx-background-color: white;
+    -fx-text-fill: darkblue;
+}
+.search_btn:hover{
+    -fx-background-color: whitesmoke;
+}
+.nav_btn {
     -fx-background-color: transparent;
     -fx-background-radius: 20px;
     -fx-border-width: 0;
     -fx-font-size: 20px;
 }
-.nav_btn:hover{
-    -fx-background-color: #31d339;
+
+.nav_btn:hover {
+    -fx-background-color: rgb(25, 25, 143);
 }
-.nav_clicked_btn{
-    -fx-background-color: #1EBE25;
+
+.nav_clicked_btn {
+    -fx-background-color: rgb(0, 0, 139,0.9);
 }
-.table_container{
-    -fx-background-color: rgb(4, 181, 0,0.3);
+
+.table_container {
+    -fx-background-color: rgb(0, 0, 139,0.5);
     -fx-background-radius: 15px;
 }
-.table_title{
+
+.table_title {
     -fx-text-alignment: center;
 }
-.table{
+
+.table {
     -fx-background-color: white;
 }

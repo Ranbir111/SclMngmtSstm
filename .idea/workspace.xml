@@ -4,11 +4,63 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4cbdfe8-91ea-42d4-97ff-d0cd3b4c9bc9" name="Changes" comment="" />
+    <list default="true" id="c4cbdfe8-91ea-42d4-97ff-d0cd3b4c9bc9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/CourseFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/DialogueController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/StudentFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/TeacherFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/CSS/style_new.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/course-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/create-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/create-icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/dashboard-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/home-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/menu-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/setting-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/student-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/teacher-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/addData-dialogue.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/course-form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/course_table_wrapper.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/old/main.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/old/student_table_wrapper.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/old/teacher_table_wrapper.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page1-home.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page2-student_table.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page3-teacher_table.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page4-course_table.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/teacher-form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStorage/studentData.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataStorage/studentData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/modals/CourseInfoModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/modals/CourseInfoModal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/modals/StudentInfoModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/modals/StudentInfoModal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/modals/TeacherInfoModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/modals/TeacherInfoModal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/DeleteOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/DeleteOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/InsertOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/InsertOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/RetrieveOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/RetrieveOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/SearchOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/SearchOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/UpdateOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/UpdateOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CSS/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/main.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,23 +72,51 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2d6DLDDEZXx9vkOit8fOeItKR9P" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ranbi/Downloads/json-simple-1.1.1.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.24827586&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ranbi\Documents\Intellij Project\SclMngmtSstm\src\main\resources\rvg\sclmngmtsstm" />
+      <recent name="C:\Users\ranbi\Documents\Intellij Project\SclMngmtSstm\src\main\java\rvg\sclmngmtsstm" />
+      <recent name="C:\Users\ranbi\Documents\Intellij Project\SclMngmtSstm" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ranbi\Documents\Intellij Project\SclMngmtSstm\src\main\resources\rvg\sclmngmtsstm" />
+      <recent name="C:\Users\ranbi\Documents\Intellij Project\SclMngmtSstm\src\main\resources\rvg\sclmngmtsstm\old" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="rvg.sclmngmtsstm" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -54,5 +134,8 @@
       <updated>1709319580096</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -1,0 +1,15 @@
+.navBtn{
+    -fx-background-color: transparent;
+}
+.current_btn{
+    -fx-background-color: rgb(255, 255, 255,0.06);
+}
+.navBtn:hover{
+    -fx-background-color: rgb(255, 255, 255,0.05);
+}
+.dealogue_saveBtn{
+    -fx-background-color: darkblue;
+    -fx-text-fill: white;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
