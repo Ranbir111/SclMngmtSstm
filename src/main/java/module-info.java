@@ -6,4 +6,5 @@ module rvg.sclmngmtsstm {
 
     opens rvg.sclmngmtsstm to javafx.fxml;
     exports rvg.sclmngmtsstm;
+    exports rvg.sclmngmtsstm.modals;
 }

@@ -14,6 +14,7 @@ public class CourseFormController {
         return true;
     }
 
+    @FXML
     protected void onSaveDataBtnClick(ActionEvent actionEvent) {
         if(saveData()) {
             MainController.stage.close();

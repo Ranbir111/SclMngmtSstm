@@ -11,7 +11,32 @@ public class StudentInfoModal {
         this.address = address;
         this.contact = contact;
     }
-    public StudentInfoModal(String name,String grade,String level,String address,String contact){
+
+    public String getName() {
+        return name;
+    }
+
+    public String getGrade() {
+        return grade;
+    }
+
+    public String getLevel() {
+        return level;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public StudentInfoModal(String name, String grade, String level, String address, String contact){
         this.name = name;
         this.grade = grade;
         this.level = level;

@@ -30,7 +30,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button fx:id="saveBtn" layoutX="5.0" layoutY="385.0" mnemonicParsing="false" onAction="#onSaveDataBtnClick" prefHeight="63.0" prefWidth="731.0" styleClass="dealogue_saveBtn" stylesheets="@../../CSS/style_new.css" text="Insert Data" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <Button fx:id="saveBtn" layoutX="5.0" layoutY="385.0" mnemonicParsing="false" onAction="#onSaveDataBtnClick" prefHeight="63.0" prefWidth="731.0" styleClass="dealogue_saveBtn" stylesheets="@../../CSS/style_new.css" text="Insert Data" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <effect>
             <Lighting>
                <bumpInput>

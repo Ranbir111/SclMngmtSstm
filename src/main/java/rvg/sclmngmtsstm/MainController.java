@@ -23,10 +23,16 @@ public class MainController implements Initializable {
     private BorderPane pageContainer;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        pageContainer.getChildren().removeAll();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("page1-home.fxml"));
+        try {
+            pageContainer.setCenter(fxmlLoader.load());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     void addCurrentBtnEffect(Button currentBtn){
-
         homeBtn.getStyleClass().remove("current_btn");
         teachersBtn.getStyleClass().remove("current_btn");
         coursesBtn.getStyleClass().remove("current_btn");

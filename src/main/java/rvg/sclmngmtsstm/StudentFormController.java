@@ -11,10 +11,11 @@ public class StudentFormController {
     TextField studentNameField,studentGradeField,studentLevelField,studentAddressField,studentContactField;
 
     boolean saveData(){
-        new InsertOperation().addNewStudent(new StudentInfoModal(studentNameField.getText(),studentGradeField.getText(),studentLevelField.getText(),studentAddressField.getText(),studentContactField.getText()));
+        new InsertOperation().addNewStudent(new StudentInfoModal(studentNameField.getText(), studentGradeField.getText(), studentLevelField.getText(), studentAddressField.getText(), studentContactField.getText()));
         return true;
     }
 
+    @FXML
     protected void onSaveDataBtnClick(ActionEvent actionEvent) {
         if(saveData()) {
             MainController.stage.close();

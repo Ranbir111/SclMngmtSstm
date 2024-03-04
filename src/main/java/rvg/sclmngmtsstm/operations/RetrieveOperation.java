@@ -54,6 +54,23 @@ public class RetrieveOperation {
         return null;
     }
 
+    // Function to get all student's data
+    public JSONArray getAllStudentData(){
+        file = new File("./DataStorage/studentData.json");
+        if (file.exists()) {
+            try {
+                obj = new JSONParser().parse(new FileReader(file));
+                jArray = (JSONArray) obj;
+
+                return jArray;
+            } catch (IOException | ParseException e) {
+                throw new RuntimeException(e);
+            }
+        }else{
+            return null;
+        }
+    }
+
     // Function to retrieve teacher data
     public TeacherInfoModal getTeacherData(int ID) {
         if (ID != 0) {
@@ -88,6 +105,23 @@ public class RetrieveOperation {
         return null;
     }
 
+    // Function to get all student's data
+    public JSONArray getAllTeacherData(){
+        file = new File("./DataStorage/teacherData.json");
+        if (file.exists()) {
+            try {
+                obj = new JSONParser().parse(new FileReader(file));
+                jArray = (JSONArray) obj;
+
+                return jArray;
+            } catch (IOException | ParseException e) {
+                throw new RuntimeException(e);
+            }
+        }else{
+            return null;
+        }
+    }
+
     // Function to retrieve course data
     public CourseInfoModal getCourseData(int ID) {
         if (ID != 0) {
@@ -120,5 +154,22 @@ public class RetrieveOperation {
             return null;
         }
         return null;
+    }
+
+    // Function to get all student's data
+    public JSONArray getAllCourseData(){
+        file = new File("./DataStorage/courseData.json");
+        if (file.exists()) {
+            try {
+                obj = new JSONParser().parse(new FileReader(file));
+                jArray = (JSONArray) obj;
+
+                return jArray;
+            } catch (IOException | ParseException e) {
+                throw new RuntimeException(e);
+            }
+        }else{
+            return null;
+        }
     }
 }

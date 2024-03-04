@@ -1,53 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SclMngmtSstm:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4cbdfe8-91ea-42d4-97ff-d0cd3b4c9bc9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/CourseFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/DialogueController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/StudentFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/TeacherFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CSS/style_new.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/course-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/create-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/create-icon2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/dashboard-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/home-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/menu-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/setting-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/student-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/teacher-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/addData-dialogue.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/course-form.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/course_table_wrapper.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/old/main.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/old/student_table_wrapper.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/old/teacher_table_wrapper.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page1-home.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page2-student_table.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page3-teacher_table.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page4-course_table.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/teacher-form.fxml" afterDir="false" />
+    <list default="true" id="c4cbdfe8-91ea-42d4-97ff-d0cd3b4c9bc9" name="Changes" comment="Insertion added">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/SclMngmtSstm_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/CourseTableController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/StudentTableController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/TeacherTableController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStorage/courseData.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataStorage/courseData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStorage/studentData.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataStorage/studentData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStorage/teacherData.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataStorage/teacherData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/CourseFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/CourseFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/DialogueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/DialogueController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/StudentFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/StudentFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/TeacherFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/TeacherFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/modals/CourseInfoModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/modals/CourseInfoModal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/modals/StudentInfoModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/modals/StudentInfoModal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/modals/TeacherInfoModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/modals/TeacherInfoModal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/DeleteOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/DeleteOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/InsertOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/InsertOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/RetrieveOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/RetrieveOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/SearchOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/SearchOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/UpdateOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/UpdateOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CSS/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/course-form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/course-form.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page2-student_table.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page2-student_table.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page3-teacher_table.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page3-teacher_table.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page4-course_table.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page4-course_table.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/teacher-form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/teacher-form.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,30 +75,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ranbi/Downloads/json-simple-1.1.1.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.24827586&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.HelloApplication.executor": "Run",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ranbi/Documents/Intellij Project/SclMngmtSstm/src/main/resources",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.24827586",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ranbi\Documents\Intellij Project\SclMngmtSstm\src\main\resources" />
       <recent name="C:\Users\ranbi\Documents\Intellij Project\SclMngmtSstm\src\main\resources\rvg\sclmngmtsstm" />
       <recent name="C:\Users\ranbi\Documents\Intellij Project\SclMngmtSstm\src\main\java\rvg\sclmngmtsstm" />
       <recent name="C:\Users\ranbi\Documents\Intellij Project\SclMngmtSstm" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ranbi\Documents\Intellij Project\SclMngmtSstm\src\main\java\rvg\sclmngmtsstm" />
       <recent name="C:\Users\ranbi\Documents\Intellij Project\SclMngmtSstm\src\main\resources\rvg\sclmngmtsstm" />
       <recent name="C:\Users\ranbi\Documents\Intellij Project\SclMngmtSstm\src\main\resources\rvg\sclmngmtsstm\old" />
     </key>
@@ -133,9 +125,20 @@
       <option name="presentableId" value="Default" />
       <updated>1709319580096</updated>
     </task>
+    <task id="LOCAL-00001" summary="Insertion added">
+      <option name="closed" value="true" />
+      <created>1709500347693</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709500347693</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Insertion added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Insertion added" />
   </component>
 </project>

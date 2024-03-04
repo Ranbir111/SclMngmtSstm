@@ -9,6 +9,23 @@ public class TeacherInfoModal {
         this.subject = subject;
         this.contact = contact;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
     public TeacherInfoModal(String name, String subject, String contact){
         this.name = name;
         this.subject = subject;
