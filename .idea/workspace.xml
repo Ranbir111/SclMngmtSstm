@@ -9,42 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4cbdfe8-91ea-42d4-97ff-d0cd3b4c9bc9" name="Changes" comment="Deletion added to student table">
-      <change afterPath="$PROJECT_DIR$/DataStorage/bin/recent.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/binHandel/RecentHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/operations/TotalOperation.java" afterDir="false" />
+    <list default="true" id="c4cbdfe8-91ea-42d4-97ff-d0cd3b4c9bc9" name="Changes" comment="Almost done">
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/SclMngmtSstm_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SclMngmtSstm_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStorage/courseData.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataStorage/courseData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStorage/studentData.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataStorage/studentData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStorage/teacherData.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataStorage/teacherData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/CourseFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/CourseFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/CourseTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/CourseTableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SclMngmtSstm_jar/SclMngmtSstm.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SclMngmtSstm_jar/SclMngmtSstm.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/StudentFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/StudentFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/StudentTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/StudentTableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/TeacherFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/TeacherFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/TeacherTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/TeacherTableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rvg/sclmngmtsstm/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CSS/style_new.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CSS/style_new.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/course-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/images/course-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/create-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/images/create-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/create-icon2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/images/create-icon2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/dashboard-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/images/dashboard-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/home-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/images/home-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/menu-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/images/menu-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/setting-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/images/setting-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/student-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/images/student-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/teacher-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/images/teacher-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/course-form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/course-form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page1-home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page1-home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page3-teacher_table.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page3-teacher_table.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page4-course_table.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/page4-course_table.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/teacher-form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rvg/sclmngmtsstm/teacher-form.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +67,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/ranbi/Downloads/controlsfx-8.0.1.jar/controlsfx-8.0.1.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.24827586&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
@@ -121,7 +91,7 @@
       <recent name="rvg.sclmngmtsstm" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="rvg.sclmngmtsstm.Main" />
       <module name="SclMngmtSstm" />
@@ -192,13 +162,30 @@
       <option name="project" value="LOCAL" />
       <updated>1709590329601</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Almost done">
+      <option name="closed" value="true" />
+      <created>1711935528249</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711935528249</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Almost done">
+      <option name="closed" value="true" />
+      <created>1711935589773</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711935589773</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Insertion added" />
     <MESSAGE value="Deletion added to student table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deletion added to student table" />
+    <MESSAGE value="Almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost done" />
   </component>
 </project>

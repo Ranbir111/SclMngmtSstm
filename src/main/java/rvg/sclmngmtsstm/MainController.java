@@ -1,5 +1,6 @@
 package rvg.sclmngmtsstm;
 
+import javafx.animation.FadeTransition;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -17,6 +18,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.Callback;
+import javafx.util.Duration;
 import javafx.util.StringConverter;
 import org.json.simple.JSONArray;
 import rvg.sclmngmtsstm.operations.SearchOperation;
@@ -83,6 +85,26 @@ public class MainController implements Initializable {
         }
     }
 
+    private void setFadeTransition(BorderPane container, float from, float to){
+        //Instantiating FadeTransition class
+        FadeTransition fade = new FadeTransition();
+
+
+        //setting the duration for the Fade transition
+        fade.setDuration(Duration.millis(800));
+
+        //setting the initial and the target opacity value for the transition
+        fade.setFromValue(from);
+        fade.setToValue(to);
+
+        //setting cycle count for the Fade transition
+        fade.setCycleCount(1);
+
+        //setting Circle as the node onto which the transition will be applied
+        fade.setNode(container);
+        fade.play();
+    }
+
     @FXML
     protected void onHomeBtnClick() throws IOException {
         addCurrentBtnEffect(homeBtn);
@@ -90,6 +112,7 @@ public class MainController implements Initializable {
         pageContainer.getChildren().removeAll();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("page1-home.fxml"));
         pageContainer.setCenter(fxmlLoader.load());
+        setFadeTransition(pageContainer, 0.1F,10F);
     }
     @FXML
     protected void onStudentsBtnClick() throws IOException {
@@ -98,6 +121,7 @@ public class MainController implements Initializable {
         pageContainer.getChildren().removeAll();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("page2-student_table.fxml"));
         pageContainer.setCenter(fxmlLoader.load());
+        setFadeTransition(pageContainer, 0.1F,10F);
     }
     @FXML
     protected void onTeachersBtnClick() throws IOException{
@@ -106,6 +130,7 @@ public class MainController implements Initializable {
         pageContainer.getChildren().removeAll();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("page3-teacher_table.fxml"));
         pageContainer.setCenter(fxmlLoader.load());
+        setFadeTransition(pageContainer, 0.1F,10F);
     }
     @FXML
     protected void onCoursesBtnClick() throws IOException {
@@ -114,6 +139,7 @@ public class MainController implements Initializable {
         pageContainer.getChildren().removeAll();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("page4-course_table.fxml"));
         pageContainer.setCenter(fxmlLoader.load());
+        setFadeTransition(pageContainer, 0.1F,10F);
     }
     @FXML
     protected void onSettingsBtnClick() throws IOException {
@@ -122,6 +148,7 @@ public class MainController implements Initializable {
         pageContainer.getChildren().removeAll();
         FXMLLoader fxmlLoader = new FXMLLoader(MainController.class.getResource("page1-home.fxml"));
         pageContainer.setCenter(fxmlLoader.load());
+        setFadeTransition(pageContainer, 0.1F,10F);
     }
 
     public void onInsertDataBtnClick(ActionEvent actionEvent) throws IOException {
