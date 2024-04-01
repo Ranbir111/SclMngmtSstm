@@ -13,3 +13,6 @@
     -fx-font-size: 25px;
     -fx-font-weight: bold;
 }
+.form_textField{
+    -fx-text-fill: gray;
+}

@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="486.0" prefWidth="641.0" style="-fx-background-radius: 10;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="486.0" prefWidth="641.0" style="-fx-background-radius: 10;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rvg.sclmngmtsstm.HomeController">
    <children>
       <GridPane layoutX="53.0" layoutY="57.0" prefHeight="187.0" prefWidth="540.0" AnchorPane.leftAnchor="52.80000000000007" AnchorPane.rightAnchor="52.60000000000002" AnchorPane.topAnchor="57.0">
          <columnConstraints>
@@ -33,7 +33,7 @@
                <children>
                   <ImageView fitHeight="100.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../images/student-icon.png" />
+                        <Image url="@images/student-icon.png" />
                      </image>
                      <VBox.margin>
                         <Insets top="10.0" />
@@ -69,7 +69,7 @@
                <children>
                   <ImageView fitHeight="100.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../images/teacher-icon.png" />
+                        <Image url="@images/teacher-icon.png" />
                      </image>
                      <VBox.margin>
                         <Insets top="10.0" />
@@ -108,7 +108,7 @@
                <children>
                   <ImageView fitHeight="100.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../images/course-icon.png" />
+                        <Image url="@images/course-icon.png" />
                      </image>
                      <VBox.margin>
                         <Insets top="10.0" />

@@ -18,7 +18,7 @@
                <children>
                   <ImageView fitHeight="44.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../images/logo.png" />
+                        <Image url="@images/logo.png" />
                      </image>
                      <HBox.margin>
                         <Insets right="20.0" />
@@ -54,7 +54,7 @@
                <graphic>
                   <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../images/home-icon.png" />
+                        <Image url="@images/home-icon.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -73,7 +73,7 @@
                <graphic>
                   <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../images/student-icon.png" />
+                        <Image url="@images/student-icon.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -88,7 +88,7 @@
                <graphic>
                   <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../images/teacher-icon.png" />
+                        <Image url="@images/teacher-icon.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -103,7 +103,7 @@
                <graphic>
                   <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../images/course-icon.png" />
+                        <Image url="@images/course-icon.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -118,7 +118,7 @@
                <graphic>
                   <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../images/setting-icon.png" />
+                        <Image url="@images/setting-icon.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -131,11 +131,11 @@
             <DropShadow offsetX="2.0" />
          </effect>
       </VBox>
-      <AnchorPane layoutX="232.0" layoutY="-1.0" prefHeight="88.0" prefWidth="668.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="topBar" layoutX="232.0" layoutY="-1.0" prefHeight="88.0" prefWidth="668.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <StackPane layoutX="176.0" layoutY="15.0" prefHeight="46.0" prefWidth="332.0" AnchorPane.bottomAnchor="14.600000000000001" AnchorPane.leftAnchor="176.0" AnchorPane.rightAnchor="176.8" AnchorPane.topAnchor="15.0">
                <children>
-                  <TextField fx:id="searchField" alignment="CENTER" prefHeight="41.0" prefWidth="316.0" promptText="Search - Student, Teacher or Course" style="-fx-background-radius: 30; -fx-background-color: #101010;">
+                  <TextField fx:id="searchField" alignment="CENTER" onAction="#searchHandler" prefHeight="41.0" prefWidth="316.0" promptText="Search - Student, Teacher or Course" style="-fx-background-radius: 30; -fx-background-color: #101010;">
                      <font>
                         <Font name="Arial" size="14.0" />
                      </font>
@@ -156,7 +156,7 @@
                <graphic>
                   <ImageView fitHeight="42.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../images/create-icon2.png" />
+                        <Image url="@images/create-icon2.png" />
                      </image>
                   </ImageView>
                </graphic>

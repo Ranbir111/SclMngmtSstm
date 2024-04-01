@@ -3,19 +3,29 @@ package rvg.sclmngmtsstm;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableCell;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.geometry.Pos;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import javafx.util.Callback;
 import org.json.simple.JSONObject;
+import org.json.simple.parser.ParseException;
+import rvg.sclmngmtsstm.binHandel.RecentHandler;
 import rvg.sclmngmtsstm.modals.StudentInfoModal;
 import rvg.sclmngmtsstm.operations.DeleteOperation;
 import rvg.sclmngmtsstm.operations.RetrieveOperation;
 
+import java.io.IOException;
 import java.net.URL;
+import java.net.URLDecoder;
 import java.util.ResourceBundle;
 
 public class StudentTableController implements Initializable {
@@ -36,6 +46,8 @@ public class StudentTableController implements Initializable {
     @FXML
     protected TableColumn actionColumn;
 
+    public static Stage stage;
+
     ObservableList<StudentInfoModal> studentList = FXCollections.observableArrayList();
 
     @Override
@@ -52,7 +64,6 @@ public class StudentTableController implements Initializable {
         studentAddressColumn.setCellValueFactory(new PropertyValueFactory<>("address"));
         studentContactColumn.setCellValueFactory(new PropertyValueFactory<>("contact"));
         addButtonToTable();
-
     }
 
     void setStudentDataToTable(){
@@ -74,16 +85,57 @@ public class StudentTableController implements Initializable {
                         setGraphic(null);
                         setText(null);
                     }else {
-                        final Button deleteBtn = new Button("Delete");
+                        HBox hBox = new HBox(20);
+                        hBox.setAlignment(Pos.CENTER);
+                        final Button editBtn = new Button("📝");
+                        editBtn.setStyle("-fx-background-color: yellow; -fx-padding: 5px 15px;");
+                        final Button deleteBtn = new Button("🚮");
+                        deleteBtn.setStyle("-fx-background-color: red; -fx-padding: 5px 15px;");
+                        editBtn.setOnAction(actionEvent -> {
+                            try {
+                                FXMLLoader fxmlLoader = new FXMLLoader(MainController.class.getResource("student-form.fxml"));
+                                StudentInfoModal studentInfoModal = getTableView().getItems().get(getIndex());
+                                JSONObject jsonObject = new JSONObject();
+                                jsonObject.put("ID",studentInfoModal.ID);
+                                jsonObject.put("name",studentInfoModal.name);
+                                jsonObject.put("grade",studentInfoModal.grade);
+                                jsonObject.put("level",studentInfoModal.level);
+                                jsonObject.put("address",studentInfoModal.address);
+                                jsonObject.put("contact",studentInfoModal.contact);
+                                new RecentHandler().setData(jsonObject);
+                                stage = new Stage();
+                                stage.initModality(Modality.APPLICATION_MODAL);
+                                Scene scene = new Scene(fxmlLoader.load());
+                                stage.setResizable(false);
+                                stage.setTitle("Insert New Data");
+                                stage.setAlwaysOnTop(true);
+                                stage.setScene(scene);
+                                stage.show();
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            } catch (ParseException e) {
+                                throw new RuntimeException(e);
+                            }
+                        });
                         deleteBtn.setOnAction(actionEvent -> {
                             System.out.println("Delete button pressed");
-                            StudentInfoModal currentStudent = getTableView().getItems().get(getIndex());
-                            int id = currentStudent.ID;
-                            new DeleteOperation().deleteStudentData(id);
-                            setStudentDataToTable();
-                            System.out.println("Data deleted successfully");
+                            Alert alert = new Alert(Alert.AlertType.CONFIRMATION,"Are sure you want to delete this Data!");
+                            alert.getButtonTypes().clear();
+                            alert.getButtonTypes().add(ButtonType.YES);
+                            alert.getButtonTypes().add(ButtonType.NO);
+                                alert.showAndWait().ifPresent(response -> {
+                                    if (response == ButtonType.YES) {
+                                        StudentInfoModal currentStudent = getTableView().getItems().get(getIndex());
+                                        int id = currentStudent.ID;
+                                        new DeleteOperation().deleteStudentData(id);
+                                        setStudentDataToTable();
+                                        System.out.println("Data deleted successfully");
+                                    }
+                                });
                         });
-                        setGraphic(deleteBtn);
+                        hBox.getChildren().add(editBtn);
+                        hBox.getChildren().add(deleteBtn);
+                        setGraphic(hBox);
                         setText(null);
                     }
                 };

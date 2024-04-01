@@ -12,10 +12,10 @@
 
 <AnchorPane prefHeight="440.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rvg.sclmngmtsstm.CourseFormController">
    <children>
-      <TextField fx:id="courseNameField" layoutX="125.0" layoutY="40.0" prefHeight="47.0" prefWidth="520.0" style="-fx-background-color: #101010;" AnchorPane.leftAnchor="124.79999999999995" AnchorPane.rightAnchor="45.39999999999998" />
-      <TextField fx:id="courseTeacherField" layoutX="125.0" layoutY="105.0" prefHeight="47.0" prefWidth="520.0" style="-fx-background-color: #101010;" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="45.60000000000002" />
-      <TextField fx:id="courseSheduleField" layoutX="125.0" layoutY="170.0" prefHeight="47.0" prefWidth="520.0" style="-fx-background-color: #101010;" AnchorPane.leftAnchor="124.8" AnchorPane.rightAnchor="45.60000000000002" />
-      <TextField fx:id="noOfStudEnrolField" layoutX="125.0" layoutY="235.0" prefHeight="47.0" prefWidth="520.0" style="-fx-background-color: #101010;" AnchorPane.leftAnchor="124.8" AnchorPane.rightAnchor="45.60000000000002" />
+      <TextField fx:id="courseNameField" layoutX="125.0" layoutY="40.0" prefHeight="47.0" prefWidth="520.0" style="-fx-background-color: #101010;" styleClass="form_textField" stylesheets="@../../CSS/style_new.css" AnchorPane.leftAnchor="124.79999999999995" AnchorPane.rightAnchor="45.39999999999998" />
+      <TextField fx:id="courseTeacherField" layoutX="125.0" layoutY="105.0" prefHeight="47.0" prefWidth="520.0" style="-fx-background-color: #101010;" styleClass="form_textField" stylesheets="@../../CSS/style_new.css" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="45.60000000000002" />
+      <TextField fx:id="courseSheduleField" layoutX="125.0" layoutY="170.0" prefHeight="47.0" prefWidth="520.0" style="-fx-background-color: #101010;" styleClass="form_textField" stylesheets="@../../CSS/style_new.css" AnchorPane.leftAnchor="124.8" AnchorPane.rightAnchor="45.60000000000002" />
+      <TextField fx:id="noOfStudEnrolField" layoutX="125.0" layoutY="235.0" prefHeight="47.0" prefWidth="520.0" style="-fx-background-color: #101010;" styleClass="form_textField" stylesheets="@../../CSS/style_new.css" AnchorPane.leftAnchor="124.8" AnchorPane.rightAnchor="45.60000000000002" />
       <Label layoutX="13.0" layoutY="50.0" prefHeight="27.0" prefWidth="111.0" text="CourseName:" textFill="WHITE" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="566.0">
          <font>
             <Font size="18.0" />
@@ -36,7 +36,7 @@
             <Font size="13.0" />
          </font>
       </Label>
-      <Button fx:id="saveBtn" layoutX="5.0" layoutY="385.0" mnemonicParsing="false" onAction="#onSaveDataBtnClick" prefHeight="63.0" prefWidth="731.0" styleClass="dealogue_saveBtn" stylesheets="@../../CSS/style_new.css" text="Insert Data" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <Button fx:id="saveBtn" defaultButton="true" layoutX="5.0" layoutY="385.0" mnemonicParsing="false" onAction="#onSaveDataBtnClick" prefHeight="63.0" prefWidth="731.0" styleClass="dealogue_saveBtn" stylesheets="@../../CSS/style_new.css" text="Insert Data" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <effect>
             <Lighting>
                <bumpInput>

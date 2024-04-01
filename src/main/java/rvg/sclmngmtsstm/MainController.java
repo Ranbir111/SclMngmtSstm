@@ -1,26 +1,42 @@
 package rvg.sclmngmtsstm;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Orientation;
+import javafx.geometry.Side;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.TextFieldListCell;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.util.Callback;
+import javafx.util.StringConverter;
+import org.json.simple.JSONArray;
+import rvg.sclmngmtsstm.operations.SearchOperation;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class MainController implements Initializable {
+//    public ListView searchList;
     @FXML
     private Button homeBtn, studentsBtn, teachersBtn, coursesBtn, settingsBtn;
     @FXML
     private TextField searchField;
     @FXML
     private BorderPane pageContainer;
+    @FXML
+    private AnchorPane topBar;
+
+    ContextMenu contextMenu;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         pageContainer.getChildren().removeAll();
@@ -30,6 +46,30 @@ public class MainController implements Initializable {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+//        ObservableList<String> observableList = FXCollections.observableArrayList("Hello","Hello");
+//        searchList.setOrientation(Orientation.VERTICAL);
+//        searchList.setItems(observableList);
+//        ListView<String> listView = new ListView<String>(observableList);
+//        listView.setMaxSize(200, 160);
+//        topBar.getChildren().add(listView);
+//        searchList.setCellFactory(new Callback<ListView<String>, ListCell<String>>() {
+//
+//            @Override
+//            public ListCell<String> call(ListView<String> param) {
+//                return new TextFieldListCell<>(new StringConverter<String>() {
+//
+//                    @Override
+//                    public String toString(String object) {
+//                        return object;
+//                    }
+//
+//                    @Override
+//                    public String fromString(String string) {
+//                        return string;
+//                    }
+//                });
+//            }
+//        });
     }
 
     void addCurrentBtnEffect(Button currentBtn){
@@ -94,12 +134,21 @@ public class MainController implements Initializable {
         FXMLLoader fxmlLoader = new FXMLLoader(MainController.class.getResource("addData-dialogue.fxml"));
         stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
-
         Scene scene = new Scene(fxmlLoader.load());
         stage.setResizable(false);
         stage.setTitle("Insert New Data");
         stage.setAlwaysOnTop(true);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void searchHandler(){
+//            contextMenu.show(searchField, Side.BOTTOM, 0, 0);
+        System.out.println("Action");
+    }
+
+    JSONArray getSearchData(String input){
+        SearchOperation searchOperation = new SearchOperation();
+        return searchOperation.searchData(input);
     }
 }
